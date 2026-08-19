@@ -1,0 +1,19 @@
+name: img2scene
+description: >-
+  Deterministic image comparator for judging a rendered candidate against a
+  reference image. Silhouette IoU, scale delta, perceptual hash, and edge
+  overlap, with hard gates and tagged defects. Independently useful as a visual
+  regression check and as a non-drifting critic.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  args: ^2.5.0
+  image: ^4.5.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0
