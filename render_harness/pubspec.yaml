@@ -1,0 +1,27 @@
+name: img2scene_render
+description: "Headless render authority for img2scene: emit a SceneSpec to a flutter_scene node tree and capture a candidate PNG."
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_scene: ^0.22.0
+  img2scene:
+    path: ..
+  vector_math: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - flutter_scene_generated/
+  uses-material-design: true
